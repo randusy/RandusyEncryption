@@ -38,7 +38,7 @@ Due to this we are going to do a little bit of offset shift of the characters he
 So the total offset will be (5 + 3) + 114 for the first number which will give us 122, (5 + 6) + 970 = 981, (5 + 9) + 44= 58, (5 + 12)+ 75=
 92, (5 + 15) + 39= 59 and we end up with the following list [122,981,58,92,59]. 
 
-At this point we are going to now get the encryption string itself by finding the equivalent ASCII character of the numbers in the list, therefore the first number will give us 122 = ‘w’ then 981 is out of range of the ASCII characters so we take the first two digits and get the ASCII equivalent i.e 98 = ‘b’ and we pass 1 the way it is. 
+At this point we are going to now get the encryption string itself by finding the equivalent ASCII character of the numbers in the list, therefore the first number will give us 122 = ‘z’ then 981 is out of range of the ASCII characters so we take the first two digits and get the ASCII equivalent i.e 98 = ‘b’ and we pass 1 the way it is. 
 
 Note: The algorithm converts ASCII equivalent in the range between 33 and 126 inclusive and the rest of the characters are passed as is, 58 will give us ‘:’, 92 = ‘\’, 59 = ‘;’, so we and up with the following list [‘z’,’b1’,’:’,’\’,’;’]. 
 
